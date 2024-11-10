@@ -1,0 +1,61 @@
+@import './variables.css';
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color-scheme: light dark;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--tertiary-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 100vw;
+  min-height: 100vh;
+
+  color: var(--primary-color);
+  background-color: var(--secundary-color);
+  overflow: hidden;
+}
+
+.dark-theme {
+  --primary-color: #242424;
+  --secundary-color: #141414;
+  --tertiary-color: #e8e26d;
+  --shadow-color: transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #242424;
+    --secundary-color: #242424;
+    --tertiary-color: #e8e26d;
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../variables.css';
+
+.character-field{
+    padding: var(--default-padding);
+    width: calc(100% - 2 * var(--default-padding));
+    display: flex;
+}
+
+.character-field-title {
+    font-size: 1em;
+    font-weight: bold;
+    margin-right: var(--default-padding);
+}

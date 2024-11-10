@@ -1,0 +1,48 @@
+@import '../../variables.css';
+
+.header {
+    padding: var(--default-padding);
+    width: calc(100% - 2 * var(--default-padding));
+    height: calc(var(--header-height) - 2 * var(--default-padding));
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow-color) 0px 7px 29px 0px;
+}
+
+.header>div,
+.back-btn,
+.back-btn-link {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-btn-link {
+    border: none;
+    background-color: transparent;
+}
+
+.back-btn {
+    border: 3px solid var(--tertiary-color);
+    border-radius: var(--char-card-border-radius);
+    background-color: var(--secundary-color);
+}
+
+.header-title {
+    font-weight: bolder;
+    font-size: 1.2em;
+    color: var(--tertiary-color);
+}
+
+@media only screen and (max-width: 340px) {
+    .header-title {
+        font-size: 1em;
+    }
+}

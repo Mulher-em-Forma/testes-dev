@@ -1,0 +1,54 @@
+@import '../../variables.css';
+
+.character-info-wrapper {
+    padding: var(--default-padding);
+    width: calc(100% - 2 * var(--default-padding));
+    height: calc(100% - 2 * var(--default-padding));
+
+    display: flex;
+    justify-content: center;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.character-info {
+    width: 99%;
+    max-width: 800px;
+    height: fit-content;
+
+    border-radius: var(--char-card-border-radius);
+
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow-color) 0px 7px 29px 0px;
+}
+
+.character-info-title {
+    padding: var(--default-padding);
+    width: calc(100% - 2 * var(--default-padding));
+    height: 3%;
+
+    font-size: 1em;
+    font-weight: bold;
+
+    text-align: center;
+    justify-content: center;
+}
+
+.character-info-content {
+    padding: var(--default-padding);
+    width: calc(100% - 2 * var(--default-padding));
+    height: calc(97% - 2 * var(--default-padding));
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--default-padding);
+    justify-content: center;
+    justify-items: center;
+}
+
+.character-info-img {
+    padding-top: var(--default-padding);
+    max-width: 100%;
+    height: auto;
+}

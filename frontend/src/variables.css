@@ -1,0 +1,12 @@
+:root {
+    --primary-color: #fff;
+    --secundary-color: #EDF2F6;
+    --tertiary-color: #213F85;
+    --shadow-color: rgba(100, 100, 111, 0.2);
+    
+    --default-padding: 10px;
+    --header-height: 64px;
+    --character-car-width: 300px;
+    --char-card-border-radius: 10px;
+    --scrollbar-width: 5px;
+}

@@ -1,0 +1,43 @@
+@import '../../variables.css';
+
+:root {
+    --switch-width: 2em;
+    --switch-height: 1em;
+}
+
+.switch {
+    width: var(--switch-width);
+    height: var(--switch-height);
+    background-color: var(--secundary-color);
+    border-radius: 20px;
+    border: 3px solid var(--tertiary-color);
+    display: flex;
+    align-items: center;
+}
+
+.switch:hover {
+    cursor: pointer;
+}
+
+.slider {
+    width: var(--switch-height);
+    height: var(--switch-height);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#checkbox:checked+.slider {
+    transform: translateX(var(--switch-height));
+    transition: transform 200ms ease;
+}
+
+#checkbox+.slider {
+    transition: transform 200ms ease;
+}
+
+#checkbox {
+    display: none;
+}

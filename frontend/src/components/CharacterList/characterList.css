@@ -1,0 +1,15 @@
+@import '../../variables.css';
+
+.character-list {
+    padding:var(--default-padding);
+    width: calc(100% - 2 * var(--default-padding));
+    height: calc(100% - 2 * var(--default-padding));
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--character-car-width));
+    gap: var(--default-padding);
+
+    justify-content: center;
+}

@@ -1,0 +1,34 @@
+@import '../../variables.css';
+
+.character-item-wrapper {
+    text-decoration: none;
+}
+
+.character-item {
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: var(--shadow-color) 0px 7px 29px 0px;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+
+    border-radius: var(--char-card-border-radius);
+    border: 3px solid transparent;
+
+    height: 100%;
+}
+
+.character-item:hover {
+    cursor: pointer;
+    border: 3px solid var(--tertiary-color);
+}
+
+.character-name {
+    border-radius: var(--char-card-border-radius) var(--char-card-border-radius) 0px 0px;
+    width: calc(100% - 2 * var(--default-padding));
+    padding: var(--default-padding);
+
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+}
